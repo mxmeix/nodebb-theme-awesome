@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-awesome",
+    "name": "Awesome Theme for NodeBB",
+    "description": "My Awesome Theme for NodeBB",
+    "url": "https://github.com/mxmeix/nodebb-theme-material",
+    "screenshot": "screenshot.png"
+}
