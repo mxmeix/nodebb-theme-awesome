@@ -1,19 +1,18 @@
-	<div id="upload-picture-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Upload Picture" aria-hidden="true">
+	<div id="upload-picture-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="upload-picture" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h3 id="myModalLabel">[[user:upload_picture]]</h3>
+					<h3 id="upload-picture">[[user:upload_picture]]</h3>
 				</div>
 				<div class="modal-body">
 					<form id="uploadForm" action="" method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="userPhoto">[[user:upload_a_picture]]</label>
-							<input type="file" id="userPhotoInput"  name="userPhoto">
-							<p class="help-block">[[user:image_spec]] <span id="file-size-block" class="hide"> ([[user:max]] <span id="upload-file-size"></span> kbs.)</span></p>
+							<label for="userPhotoInput">[[user:upload_a_picture]]</label>
+							<input type="file" id="userPhotoInput" name="files[]">
+							<p class="help-block">[[user:image_spec]] (<span id="file-size-block" class="hide"></span>)</p>
 						</div>
 						<input type="hidden" id="params" name="params" />
-						<input type="hidden" id="csrfToken" name="_csrf" />
 					</form>
 
 					<div id="upload-progress-box" class="progress progress-striped">
@@ -30,6 +29,6 @@
 					<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
 					<button id="pictureUploadSubmitBtn" class="btn btn-primary">[[user:upload_picture]]</button>
 				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+			</div>
+		</div>
+	</div>

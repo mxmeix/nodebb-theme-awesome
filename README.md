@@ -1,1 +1,0 @@
-Persona theme for NodeBB 0.6.x

@@ -1,7 +1,10 @@
-		</div><!--END container -->
+		</div><!-- END container -->
+	</main>
+
+	<div class="hide">
+	<!-- IMPORT 500-embed.tpl -->
 	</div>
 
-	<!-- IMPORT partials/modals/upload_picture_modal.tpl -->
 
 	<div class="topic-search hidden">
 		<div class="btn-group">
@@ -10,18 +13,10 @@
 			<button type="button" class="btn btn-default next"><i class="fa fa-fw fa-angle-down"></i></button>
 		</div>
 	</div>
-	<div class="alert-window alert-left-top"></div>
-	<div class="alert-window alert-left-bottom"></div>
-	<div class="alert-window alert-right-top"></div>
-	<div class="alert-window alert-right-bottom"></div>
+	<div component="toaster/tray" class="alert-window"></div>
 
-	<div id="scrollbar">
-		<div class="handle">
-			<div class="mousearea"></div>
-			<div id="pagination" class="hidden"></div>
-		</div>
-	</div>
-	
-	<script>require(['forum/footer']);</script>
+	<script>
+		require(['forum/footer']);
+	</script>
 </body>
 </html>

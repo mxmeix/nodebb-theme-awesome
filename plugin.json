@@ -1,9 +1,0 @@
-{
-	"id": "nodebb-theme-awesome",
-	"library": "./lib/theme.js",
-	"hooks": [
-		{
-			"hook": "filter:category.topics.get", "method": "addPostData"
-		}
-	]
-}

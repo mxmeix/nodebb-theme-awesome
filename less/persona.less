@@ -1,160 +1,39 @@
-button.btn {
-	border: 0px;
-	text-transform: uppercase;
-	font-weight: 600;
-	padding-left: 0;
-	
-	box-shadow: none !important;
-	background: none;
-	border-color: none;
+@import "style";
 
-	outline: none !important;
-}
+@import "topic";
+@import "category";
+@import "tags";
+@import "noscript";
+@import "categories";
+@import "header";
+@import "account";
+@import "groups";
+@import "chats";
+@import "notifications";
+@import "search";
+@import "unread";
+@import "users";
+@import "outgoing";
+@import "footer";
+@import "posts_list";
+@import "register";
 
-.pull-right {
-	button.btn {
-		padding-left: @padding-base-horizontal;
-		padding-right: 0;
-	}
-}
+@import "mobile";
 
-.dropdown-toggle {
-	&:hover, &:active {
-		background: none;
-	}
-}
+@import "helpers";
+@import "keyframes";
+@import "rtl";
 
-.open {
-	.dropdown-toggle {
-		box-shadow: none !important;
-		background: none !important;
-		border-color: none !important;
-	}
-
-	.dropdown-menu {
-		margin-top: -34px; // find variable
-		border-radius: 0px;
-	}
-
-	&.dropup .dropdown-menu {
-		margin-bottom: -34px; // find variable
-	}
-}
+@import "modules/nprogress";
+@import "modules/usercard";
+@import "modules/taskbar";
+@import "modules/alerts";
+@import "modules/fab";
+@import "modules/morph";
 
 
-
-.category {
-	#topics-container {
-		box-shadow: 0px 2px 1px #AAA;
-
-		.category-item {
-			&.unread {
-				border-left: 2px solid @brand-primary;
-				margin-left: -2px;
-
-				.topic-row {
-					.topic-title {
-						opacity: 1;
-					}
-
-					.post-content {
-						display: block;
-						max-height: 20px;
-					}
-				}
-			}
-
-			.select {
-				position: relative;
-
-				&:before {
-					content: "";
-				}
-
-				.fa-check {
-					border: 1px solid #CCC;
-					padding: 9px;
-					border-radius: 50%;
-					position: absolute;
-					left: 0px;
-					font-size: 15px;
-					visibility: hidden;	
-					top: 2px;
-
-					&:before {
-						.pointer;
-					}
-				}
-
-				.user-img {
-					.pointer;
-					margin-top: -14px;
-				}
-			}
-
-			&.selected {
-				.user-img {
-					visibility: hidden;
-				}
-
-				.fa-check {
-					visibility: visible;
-				}
-			}
-
-			.topic-row {
-				border-radius: 0px;
-				margin: 0px;
-				margin-bottom: -1px;
-				padding: 10px 15px;
-
-				.user-img {
-					width: 35px;
-					height: 35px;
-					margin-right: 15px;
-				}
-
-				.select, a {
-					display: inline-block;
-				}
-
-				.topic-title {
-					color: #333;
-					opacity: 0.65;
-				}
-			}
-
-			.topic-avatar {
-				width: 50px;
-				float: left;
-			}
-
-			.topic-content {
-				float: left;
-				width: 100%;
-				margin-right: -100px;
-				padding-right: 55px;
-				overflow: hidden;
-
-				.post-content {
-					max-height: 60px;
-					overflow: hidden;
-					display: block;
-					color: #666;
-				}
-			}
-		}
-	}
-}
-
-#frame {
-	background: #f0f0f0;
-}
-
-
-@media (max-width: @screen-sm-min) {
-	.category #topics-container {
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-}
+@material-primary:         #337ab7;
+@material-success:         #4CAF50;
+@material-info:            #C5CAE9;
+@material-warning:         #ff6d00;
+@material-danger:          #F44336;

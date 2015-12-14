@@ -1,22 +1,29 @@
 <div class="recent">
-	<ol class="breadcrumb">
-		<li><a href="{relative_path}/">[[global:home]]</a></li>
-		<li class="active">[[recent:title]] <!-- IF !feeds:disableRSS --><a href="{relative_path}/recent.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></li>
-	</ol>
 
-	<a href="{relative_path}/recent">
-		<div class="alert alert-warning hide" id="new-topics-alert"></div>
-	</a>
-
-	<!-- IF !topics.length -->
-	<div class="alert alert-warning" id="category-no-topics">
-		<strong>[[recent:no_recent_topics]]</strong>
-	</div>
-	<!-- ENDIF !topics.length -->
-
-	<div class="category row">
-		<div class="col-md-12">
-			<!-- IMPORT partials/topics_list.tpl -->
+	<div class="clearfix">
+		<div class="pull-left">
+		<!-- IMPORT partials/breadcrumbs.tpl -->
 		</div>
+		<div class="pull-right">
+			<!-- IF loggedIn -->
+			<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
+			<!-- ELSE -->
+			<a href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
+			<!-- ENDIF loggedIn -->
+		</div>
+	</div>
+
+	<hr class="hidden-xs"/>
+
+	<div class="category">
+		<!-- IF !topics.length -->
+		<div class="alert alert-warning" id="category-no-topics">[[recent:no_recent_topics]]</div>
+		<!-- ENDIF !topics.length -->
+
+		<a href="{config.relative_path}/recent">
+			<div class="alert alert-warning hide" id="new-topics-alert"></div>
+		</a>
+
+		<!-- IMPORT partials/topics_list.tpl -->
 	</div>
 </div>
