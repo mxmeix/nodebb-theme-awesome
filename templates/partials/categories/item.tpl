@@ -28,7 +28,7 @@
 		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
 		<small>[[global:posts]]</small>
 	</div>
-	<div class="col-md-3 col-sm-3 teaser"><br>meixia</br>
+	<div class="col-md-2 col-sm-2 teaser">
 		<!-- IMPORT partials/categories/lastpost.tpl -->
 	</div>
 	<!-- ENDIF !../link -->
