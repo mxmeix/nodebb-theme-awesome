@@ -14,6 +14,7 @@
 		</h2>
 		<span class="visible-xs pull-right">
 			<a class="permalink" href="{../teaser.url}">
+				<small class="teaser" title="{../lastpost.tpl}"></small>
 				<small class="timeago" title="{../teaser.timestampISO}"></small>
 			</a>
 		</span>
